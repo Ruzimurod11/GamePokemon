@@ -31,6 +31,10 @@ class Game {
 				const $logs = document.querySelector(tag);
 				$logs.innerHTML = `<p>${generateLog(player1, player2)}</p>`
 			}
+
+			document.getElementById('refresh').addEventListener('click', () => {
+				window.location.reload(true);
+			})
 		
 			$btn.addEventListener('click', () => {
 				btnCount();
