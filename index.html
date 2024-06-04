@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Pokemon Fight</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- <div class="preloader">
+			<div class="preloader__row">
+				<div class="preloader__item"></div>
+				<div class="preloader__item"></div>
+			</div>
+		</div> -->
+		<div class="body">
+			<header>
+				<img
+					class="logo"
+					title="Reset Game"
+					src="./assets/Pokemon_logo.png"
+					alt="Pokemon"
+				/>
+			</header>
+			<div class="playground">
+				<div class="pokemon player1">
+					<span class="lvl">Lv. 1</span>
+
+					<img
+						src="https://www.pngitem.com/pimgs/m/9-97067_pikachu-clipart-head-pikachu-face-png-transparent-png.png"
+						id="img-player1"
+						class="sprite"
+					/>
+
+					<div class="details">
+						<h2 class="name" id="name-player1"></h2>
+						<div class="hp">
+							<div class="bar">
+								<div class="health" id="progressbar-player1"></div>
+							</div>
+							<span class="text" id="health-player1"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="control"></div>
+
+				<div class="pokemon player2">
+					<span class="lvl">Lv. 1</span>
+
+					<img
+						src="https://w7.pngwing.com/pngs/390/773/png-transparent-pokemon-crystal-hoppip-pokemon-go-cuteness-cloud-cute-manga-head-snout-thumbnail.png"
+						id="img-player2"
+						class="sprite"
+					/>
+
+					<div class="details">
+						<h2 class="name" id="name-player2"></h2>
+						<div class="hp">
+							<div class="bar">
+								<div class="health" id="progressbar-player2"></div>
+							</div>
+							<span class="text" id="health-player2"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="logs"></div>
+		</div>
+		<div class="catch-screen"></div>
+
+		<script src="js/main.js" type="module"></script>
+	</body>
+</html>
