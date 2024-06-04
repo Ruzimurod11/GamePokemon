@@ -240,10 +240,10 @@ body {
 
 @media (max-width: 431px) {
 	.pokemon .details .name {
-		font-size: 20px;
-		font-weight: 600;
+		font-size: 18px;
+		font-weight: 500;
 		color: #222;
-		margin: 10px 0;
+		margin: 12px 0;
 		display: inline-block;
 	}
 
@@ -614,9 +614,9 @@ h1 {
 	}
 
 	#lose {
-		position: absolute;
+		position: fixed;
 		top: 20%;
-		left: 35%;
+		left: 31.5%;
 		color: rgba(255, 255, 255, 0.852);
 		background-color: rgb(226, 19, 19);
 		padding: 0 10px;
@@ -624,9 +624,9 @@ h1 {
 	}
 
 	#refresh {
-		position: absolute;
+		position: fixed;
 		top: 45%;
-		left: 42%;
+		left: 39%;
 		background-color: rgb(15, 110, 227);
 		padding: 10px;
 	}
