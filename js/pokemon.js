@@ -26,10 +26,26 @@ class Pokemon extends Selectors {
 	}
 
 	changeHP = (count, cb) => {
+		function createLose(tag, name) {
+			const $lose = document.getElementById(tag);
+			$lose.innerHTML = `<p> ${name} проиграл</p>`;
+		}
+		function createRefresh(tag) {
+			const $refresh = document.getElementById(tag);
+			$refresh.innerHTML = `<p class="refresh">Refresh</p>`;
+		}
+
 		this.hp.current -= count;
 		if (this.hp.current <= 0) {
+
 			this.hp.current = 0;
-			alert(`${this.name} проиграл`);
+
+			createLose('lose', this.name);
+			createRefresh('refresh');
+			document.getElementById('refresh').addEventListener('click', () => {
+				window.location.reload();
+			})
+			// alert(`${this.name} проиграл`);
 		}
 		this.renderHP();
 		cb && cb(count);
@@ -40,7 +56,6 @@ class Pokemon extends Selectors {
 		this.renderProgressbarHP();
 		this.renderName();
 		this.renderImage();
-		// this.changeHP()
 	}
 	
 	renderHPLife = () => {
