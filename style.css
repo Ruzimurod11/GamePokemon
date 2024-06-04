@@ -20,6 +20,7 @@ body {
 	text-align: center;
 	user-select: none;
 	overflow: auto;
+	/* position: relative; */
 }
 
 .catch_screen {
@@ -581,8 +582,8 @@ h1 {
 
 #lose {
 	position: absolute;
-	top: 20%;
-	left: 35%;
+	top: 22%;
+	left: 45.3%;
 	color: rgba(255, 255, 255, 0.852);
 	background-color: rgb(226, 19, 19);
 	padding: 0 10px;
@@ -590,16 +591,35 @@ h1 {
 }
 #refresh {
 	position: absolute;
-	top: 45%;
-	left: 42%;
+	top: 70%;
+	left: 47.5%;
 	background-color: rgb(15, 110, 227);
 	padding: 0 10px;
+	z-index: 2;
+	cursor: pointer;
 }
 @media (max-width: 431px) {
 	body,
 	html {
 		min-height: 500px;
 		/* text-align: center; */
+	}
+
+	#lose {
+		position: absolute;
+		top: 20%;
+		left: 35%;
+		color: rgba(255, 255, 255, 0.852);
+		background-color: rgb(226, 19, 19);
+		padding: 0 10px;
+		z-index: 2;
+	}
+	#refresh {
+		position: absolute;
+		top: 45%;
+		left: 42%;
+		background-color: rgb(15, 110, 227);
+		padding: 0 10px;
 	}
 
 	header {

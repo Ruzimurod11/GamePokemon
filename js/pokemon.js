@@ -39,11 +39,15 @@ class Pokemon extends Selectors {
 		if (this.hp.current <= 0) {
 
 			this.hp.current = 0;
-
 			createLose('lose', this.name);
 			createRefresh('refresh');
+			document.querySelectorAll('.control button').forEach((item) => {
+				console.log(item)
+				item.disabled = true;
+			})
+
 			document.getElementById('refresh').addEventListener('click', () => {
-				window.location.reload();
+				window.location.reload(true);
 			})
 			// alert(`${this.name} проиграл`);
 		}
