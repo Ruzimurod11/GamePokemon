@@ -20,7 +20,6 @@ body {
 	text-align: center;
 	user-select: none;
 	overflow: auto;
-	/* position: relative; */
 }
 
 .catch_screen {
@@ -75,7 +74,7 @@ body {
 		width: 320px;
 		position: relative;
 		display: flex;
-		margin: -210px 0px 0px 0px;
+		margin: -190px 0px 0px 0px;
 		flex-flow: wrap;
 		gap: 10px;
 		justify-content: center;
@@ -241,7 +240,7 @@ body {
 @media (max-width: 431px) {
 	.pokemon .details .name {
 		font-size: 18px;
-		font-weight: 500;
+		font-weight: 600;
 		color: #222;
 		margin: 12px 0;
 		display: inline-block;
@@ -252,7 +251,7 @@ body {
 		margin: auto;
 	}
 	.pokemon .details .hp .text {
-		color: #666;
+		color: #201818;
 		display: block;
 		font-weight: 500;
 		padding-top: 4px;
@@ -361,19 +360,19 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-weight: 500;
-	color: #ad0c0c;
+	color: #eef3f4fd;
 	font-size: 20px;
-	background-color: white;
+	background-color: rgba(51, 44, 44, 0.735);
 }
 
 @media (max-width: 431px) {
 	#logs {
-		margin: -150px auto 0px;
+		margin: -150px auto 10px;
 		display: flex;
 		justify-content: center;
 		align-self: center;
 		width: 380px;
-		height: auto;
+		height: 190px;
 		padding: 0 10px;
 	}
 
@@ -615,7 +614,7 @@ h1 {
 
 	#lose {
 		position: fixed;
-		top: 20%;
+		top: 15%;
 		left: 31.5%;
 		color: rgba(255, 255, 255, 0.852);
 		background-color: rgb(226, 19, 19);
@@ -625,7 +624,7 @@ h1 {
 
 	#refresh {
 		position: fixed;
-		top: 45%;
+		top: 38%;
 		left: 39%;
 		background-color: rgb(15, 110, 227);
 		padding: 10px;
